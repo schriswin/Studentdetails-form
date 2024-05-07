@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fill-in">
+    <h1 name="student-details" id="student-details">Student Details</h1>
+    <h2>Academic Details</h2>
+    <p>Name: <input type="text" name="name" id="name" required placeholder="Enter name"></p>
+    <p>Roll number: <input type="number" name="rollno" id="rollno" required placeholder="Enter Roll no"></p>
+    <p required>Year of study: 
+        <select name="year" id="year">
+            <option>---Select year of study---</option>
+            <option>I</option>
+            <option>II</option>
+            <option>III</option>
+            <option>IV</option>
+        </select>
+    </p>
+    <p>Department: 
+        <select name="deptname" id="deptname" required placeholder="Select your dept">
+            <option>---Select your dept---</option>
+            <option>ECE</option>
+            <option>CSE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+        </select>
+    </p>
+    
+    <fieldset>
+        <legend>Mode of Study</legend>
+        <p name="mode" id="mode"><input type="radio" name="mode" id="dayscholar">Dayscholar  <input type="radio" name="mode" id="hosteller">Hosteller  </p>
+    </fieldset>
+    <h2>Personal Details</h2>
+    <p>Enter your ph number: <input type="number" name="ph-number" id="ph-number" required placeholder="Enter your phone number"></p>
+    <p>Father's name: <input type="text" name="name" id="fathername" required placeholder="Enter Father's name"></p>
+    <p>Mother's name: <input type="text" name="name" id="mothername" required placeholder="Enter Mother's name"></p>
+    <p>Parent phone number: <input type="number" name="parent-number" id="parent-number" required placeholder="Enter parent phone number"></p>
+    <p>Address: 
+        <textarea name="address" id="address" rows="10" cols="45"></textarea>
+    </p>
+    <input type="submit" value="Submit">
+</div>
+</body>
+</html>
